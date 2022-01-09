@@ -58,9 +58,6 @@ ifneq (,$(findstring unix,$(platform)))
         SHARED := -shared -lpthread -lm -z defs
     else
         SHARED := -lpthread -lm -shared -Wl,--no-undefined -Wl,--version-script=link.T
-        ifneq ($(findstring Linux,$(shell uname -s)),)
-            HAVE_CDROM = 1
-        endif
     endif
 
     THREADED_DSP = 1
