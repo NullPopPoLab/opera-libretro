@@ -98,14 +98,13 @@ setup_joypad_descs(struct retro_input_descriptor *desc_,
   rv += setup_joypad_desc(desc_++,port_,RETRO_DEVICE_ID_JOYPAD_UP,"D-Pad Up");
   rv += setup_joypad_desc(desc_++,port_,RETRO_DEVICE_ID_JOYPAD_DOWN,"D-Pad Down");
   rv += setup_joypad_desc(desc_++,port_,RETRO_DEVICE_ID_JOYPAD_RIGHT,"D-Pad Right");
-  rv += setup_joypad_desc(desc_++,port_,RETRO_DEVICE_ID_JOYPAD_Y,"A");
+  rv += setup_joypad_desc(desc_++,port_,RETRO_DEVICE_ID_JOYPAD_C,"A");
   rv += setup_joypad_desc(desc_++,port_,RETRO_DEVICE_ID_JOYPAD_B,"B");
   rv += setup_joypad_desc(desc_++,port_,RETRO_DEVICE_ID_JOYPAD_A,"C");
   rv += setup_joypad_desc(desc_++,port_,RETRO_DEVICE_ID_JOYPAD_L,"L");
   rv += setup_joypad_desc(desc_++,port_,RETRO_DEVICE_ID_JOYPAD_R,"R");
   rv += setup_joypad_desc(desc_++,port_,RETRO_DEVICE_ID_JOYPAD_SELECT,"X (Stop)");
   rv += setup_joypad_desc(desc_++,port_,RETRO_DEVICE_ID_JOYPAD_START,"P (Play/Pause)");
-  rv += setup_joypad_desc(desc_++,port_,RETRO_DEVICE_ID_JOYPAD_X,"P (Play/Pause)");
 
   return rv;
 }
@@ -125,7 +124,7 @@ setup_flightstick_descs(struct retro_input_descriptor *desc_,
   rv += setup_joypad_desc(desc_++,port_,RETRO_DEVICE_ID_JOYPAD_UP,"D-Pad Up");
   rv += setup_joypad_desc(desc_++,port_,RETRO_DEVICE_ID_JOYPAD_DOWN,"D-Pad Down");
   rv += setup_joypad_desc(desc_++,port_,RETRO_DEVICE_ID_JOYPAD_RIGHT,"D-Pad Right");
-  rv += setup_joypad_desc(desc_++,port_,RETRO_DEVICE_ID_JOYPAD_Y,"A");
+  rv += setup_joypad_desc(desc_++,port_,RETRO_DEVICE_ID_JOYPAD_C,"A");
   rv += setup_joypad_desc(desc_++,port_,RETRO_DEVICE_ID_JOYPAD_B,"B");
   rv += setup_joypad_desc(desc_++,port_,RETRO_DEVICE_ID_JOYPAD_A,"C");
   rv += setup_joypad_desc(desc_++,port_,RETRO_DEVICE_ID_JOYPAD_L,"L");
@@ -133,7 +132,6 @@ setup_flightstick_descs(struct retro_input_descriptor *desc_,
   rv += setup_joypad_desc(desc_++,port_,RETRO_DEVICE_ID_JOYPAD_R2,"Fire");
   rv += setup_joypad_desc(desc_++,port_,RETRO_DEVICE_ID_JOYPAD_SELECT,"X (Stop)");
   rv += setup_joypad_desc(desc_++,port_,RETRO_DEVICE_ID_JOYPAD_START,"P (Play/Pause)");
-  rv += setup_joypad_desc(desc_++,port_,RETRO_DEVICE_ID_JOYPAD_X,"P (Play/Pause)");
 
   return rv;
 }

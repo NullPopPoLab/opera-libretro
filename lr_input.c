@@ -87,9 +87,8 @@ lr_input_poll_joypad(const int port_)
   jp.lt = poll_joypad(port_,RETRO_DEVICE_ID_JOYPAD_L);
   jp.rt = poll_joypad(port_,RETRO_DEVICE_ID_JOYPAD_R);
   jp.x  = poll_joypad(port_,RETRO_DEVICE_ID_JOYPAD_SELECT);
-  jp.p  = poll_joypad(port_,RETRO_DEVICE_ID_JOYPAD_START) |
-          poll_joypad(port_,RETRO_DEVICE_ID_JOYPAD_X);
-  jp.a  = poll_joypad(port_,RETRO_DEVICE_ID_JOYPAD_Y);
+  jp.p  = poll_joypad(port_,RETRO_DEVICE_ID_JOYPAD_START);
+  jp.a  = poll_joypad(port_,RETRO_DEVICE_ID_JOYPAD_C);
   jp.b  = poll_joypad(port_,RETRO_DEVICE_ID_JOYPAD_B);
   jp.c  = poll_joypad(port_,RETRO_DEVICE_ID_JOYPAD_A);
 
@@ -107,7 +106,7 @@ lr_input_poll_flightstick(const int port_)
   fs.z_pos = poll_analog_ry(port_);
 
   fs.fire = poll_joypad(port_,RETRO_DEVICE_ID_JOYPAD_R2);
-  fs.a    = poll_joypad(port_,RETRO_DEVICE_ID_JOYPAD_Y);
+  fs.a    = poll_joypad(port_,RETRO_DEVICE_ID_JOYPAD_C);
   fs.b    = poll_joypad(port_,RETRO_DEVICE_ID_JOYPAD_B);
   fs.c    = poll_joypad(port_,RETRO_DEVICE_ID_JOYPAD_A);
   fs.u    = poll_joypad(port_,RETRO_DEVICE_ID_JOYPAD_UP);
